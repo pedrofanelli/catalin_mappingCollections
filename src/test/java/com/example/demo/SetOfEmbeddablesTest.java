@@ -49,6 +49,7 @@ public class SetOfEmbeddablesTest {
         Item item16 = new Item("Cocaina");
         
         item16.addImage(new Image("background.jpg", 640, 480));
+        item16.addImage(new Image("background.jpg", 641, 480));
         
         itemRepository.save(item16);
 

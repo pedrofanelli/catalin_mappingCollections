@@ -23,6 +23,12 @@ public class Item {
 
     private String name;
 
+    /**
+     * Creamos una tabla adicional que funciona para almacenar items de una Colección
+     * La Primary Key que no esta presente de forma explícita en un ID en la tabla Image
+     * se representa por la combinación de fields de cada objeto de Image.
+     * Al estar conectado con Item, no podré repetir Image para un mismo Item.
+     */
     @ElementCollection
     @CollectionTable(name = "IMAGE")
     @AttributeOverride(
