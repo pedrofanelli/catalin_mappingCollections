@@ -1,6 +1,16 @@
 package com.example.demo.mapOfEmbeddables;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.example.demo.Constants;
+
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Item {
