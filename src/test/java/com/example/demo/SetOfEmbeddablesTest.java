@@ -45,6 +45,12 @@ public class SetOfEmbeddablesTest {
                 () -> assertEquals(1, items2.size()),
                 () -> assertEquals(4, images.size())
         );
+        
+        Item item16 = new Item("Cocaina");
+        
+        item16.addImage(new Image("background.jpg", 640, 480));
+        
+        itemRepository.save(item16);
 
     }
 }
